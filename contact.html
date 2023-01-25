@@ -1,97 +1,104 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
-    <title>Svelto - Contato</title>
+<html lang="en">
+
+<head>
+    <title>Svelto</title>
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
+</head>
+<body>
     <menu class="menu">
-      <li class="menu__logo">
+    <li class="menu__logo">
         <a href="#home">
-          <figure>
-            <img src="./static/images/logos/svelto-logo-principal.svg" alt="logo Svelto, clique para retornar a página inicial" />
+            <figure>
+                <img src="./static/images/logos/svelto-logo-principal.svg"
+                    alt="logo Svelto, clique para retornar a página inicial" />
 
-            <figcaption class="u-sr-only">
-              Svelto - logo, clique para retornar a página inicial
-            </figcaption>
-          </figure>
+                <figcaption class="u-sr-only">
+                    Svelto - logo, clique para retornar a página inicial
+                </figcaption>
+            </figure>
         </a>
-      </li>
+    </li>
 
-      <button class="menu__burger" onclick="this.classList.toggle('menu__burger--opened'); this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+    <button class="menu__burger"
+        onclick="this.classList.toggle('menu__burger--opened'); this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+        aria-label="Main Menu">
         <svg width="100" height="100" viewBox="0 0 100 100">
-          <path class="menu__burger__line menu__burger__line--1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-          <path class="menu__burger__line menu__burger__line--2" d="M 20,50 H 80" />
-          <path class="menu__burger__line menu__burger__line--3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            <path class="menu__burger__line menu__burger__line--1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="menu__burger__line menu__burger__line--2" d="M 20,50 H 80" />
+            <path class="menu__burger__line menu__burger__line--3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
         </svg>
-      </button>
+    </button>
 
-      <ul class="menu__links">
+    <ul class="menu__links">
         <li class="menu__links__item">Home</li>
         <li class="menu__links__item">Serviços</li>
         <li class="menu__links__item">Blog</li>
         <li class="menu__links__item">Contato</li>
-      </ul>
-    </menu>
-
+    </ul>
+</menu>
     <main class="contact-page">
-      <header class="print-area">
-        <div class="print-area__card">
-          <h1 class="print-area__card__title">Contate-nos</h1>
-          <h2 class="print-area__card__description">Quer trocar uma ideia sobre o nosso trabalho? Preencha os campos abaixo e vamos conversar.</h2>
-        </div>
+  <header class="print-area">
+    <div class="print-area__card">
+      <h1 class="print-area__card__title">Contate-nos</h1>
+      <h2 class="print-area__card__description">Quer trocar uma ideia sobre o nosso trabalho? Preencha os campos abaixo
+        e vamos conversar.</h2>
+    </div>
 
-        <div class="print-area__card__image-wrapper">
-          <img class="print-area__banner" src="./static/images/banner-contato.svg" alt="Contato - banner" />
-        </div>
-      </header>
+    <div class="print-area__card__image-wrapper">
+      <img class="print-area__banner" src="./static/images/banner-contato.svg" alt="Contato - banner" />
+    </div>
+  </header>
 
-      <section class="contact">
-        <h2 class="card__title">Preencha os dados abaixo</h2>
+  <section class="contact">
+    <h2 class="card__title">Preencha os dados abaixo</h2>
 
-        <form class="contact__form">
-          <fieldset class="contact__form__info">
-            <label>
-              Nome completo:
-              <input type="text" value="" name="name" />
-            </label>
+    <form class="contact__form">
+      <fieldset class="contact__form__info">
+        <label>
+          Nome completo:
+          <input type="text" value="" name="name" />
+        </label>
 
-            <label>
-              E-mail:
-              <input type="email" value="" name="email" />
-            </label>
+        <label>
+          E-mail:
+          <input type="email" value="" name="email" />
+        </label>
 
-            <label>
-              Telefone:
-              <input type="text" value="" name="phone" />
-            </label>
+        <label>
+          Telefone:
+          <input type="text" value="" name="phone" />
+        </label>
 
-            <label>
-              Motivo para contato:
-              <select name="reason">
-                <optgroup>
-                  <option>Selecione</option>
-                </optgroup>
-              </select>
-            </label>
-          </fieldset>
+        <label>
+          Motivo para contato:
+          <select name="reason">
+            <optgroup>
+              <option>Selecione</option>
+            </optgroup>
+          </select>
+        </label>
+      </fieldset>
 
-          <label>
-            Deixe aqui sua mensagem:
-            <textarea name="message">
+      <label>
+        Deixe aqui sua mensagem:
+        <textarea name="message">
 
             </textarea>
-          </label>
+      </label>
 
-          <button type="submit" class="button--fill">enviar</button>
-        </form>
-      </section>
-    </main>
-  </body>
+      <button type="submit" class="button--fill">enviar</button>
+    </form>
+  </section>
+</main>
+    
+</body>
+
 </html>
